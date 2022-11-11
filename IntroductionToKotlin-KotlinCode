@@ -1,0 +1,316 @@
+//Activity3 
+//3: Open Kotlin playground
+fun main() {
+    println("Hello, world!")
+}
+
+//6:modify your program
+fun main() {
+    println("Hello, Android!")
+    println("Hello, Android!")
+}
+
+//8: fixx error
+fun main() {
+    println("Today is sunny!")
+}
+//Activity 3 question 9 exercise
+//exercise  question 1
+output of program is:
+1
+2
+3
+
+//exercise  question 2
+fun main() {
+    println("I'm")
+    println("learning")
+    println("Kotlin!")
+}
+
+//exercise  question 3
+fun main() {
+    println("Monday")
+    println("Tuesday")
+    println("Wednesday")
+    println("Thursday")
+    println("Friday")
+}
+
+//exercise question 4
+fun main() {
+    println("Tomorrow is rainy")
+}
+
+//exercise question 5
+fun main() {
+    println("There is a chance of snow")
+}
+
+//exercise question 6
+fun main() {
+    println("Cloudy")
+    println("Partly Cloudy")
+    println("Windy")
+}
+
+//exercise question 7
+fun main() {
+    println("How's the weather today?")
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Activity 4
+//3:define and use variable 
+fun main() {
+    val count: Int = 2
+    println(count)
+}
+
+//4: Update variables
+fun main() {
+    var cartTotal = 0
+    println("Total: $cartTotal")
+
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+fun main() {
+    var count = 10
+    println("You have $count unread messages.")
+    count = count + 1
+    println("You have $count unread messages.")
+}
+fun main() {
+    var count = 10
+    println("You have $count unread messages.")
+    count--
+    println("You have $count unread messages.")
+}
+
+//5: Explore other datatype
+fun main() {
+    val notificationsEnabled: Boolean = false
+    println("Are notifications enabled? " + notificationsEnabled)
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Activity 5:
+//Question 2: define and call a function
+fun main() {
+    birthdayGreeting()
+}
+
+fun birthdayGreeting() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+//question 3: return a value ffrom a function
+fun main() {
+    val greeting = birthdayGreeting()
+    println(greeting)
+}
+fun birthdayGreeting(): String {
+    val nameGreeting = "Happy Birthday, Rover!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+//question 4: adding parameter to the birthdayGreeting() function 
+fun main() {
+    
+   println(birthdayGreeting("Rover"))
+println(birthdayGreeting("Rex"))
+}
+fun birthdayGreeting(name: String): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+//question 5: function with multiple parameters
+fun main() {
+    println(birthdayGreeting("Rover", 5))
+    println(birthdayGreeting("Rex", 2))
+}
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now $age years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+//question 6: named arguments
+fun main() {
+    println(birthdayGreeting(name = "Rover", age = 5))
+   println(birthdayGreeting(age = 2, name = "Rex"))
+}
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now $age years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+//question 7: default arguments
+fun main() {
+    println(birthdayGreeting(age = 5))
+println(birthdayGreeting("Rex", 2))
+}
+fun birthdayGreeting(name: String = "Rover", age: Int): String {
+    return "Happy Birthday, $name! You are now $age years old!"
+}
+    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Activity 6: 
+//Question 2: Print message
+fun main(){
+println("Use the val keyword when the value doesn't change.")
+println("Use the var keyword when the value can change")
+println("When you define a function, you define the parameters that can be passed to it")
+println("When you call a function, you pass arguments for the parameters")
+}
+
+//Question 3: fix error
+fun main(){
+println("New chat message from a friend")
+}
+
+//Question 4: String templates
+fun main(){
+val discountPercentage: Int=20
+val item="Google Chromecast"
+val offer: String="Sale - Up to $discountPercentage% discount on $item! Hurry up!"
+println(offer)
+}
+
+//Question 5: String concatenation
+fun main(){
+val numberOfAdults=20
+vall numberOfAdults + numberOfKids
+println("The total party size is : $total")
+}
+
+//Question 6: message formatting 
+//The val totalSalary = "$baseSalary + $bonusAmount" should change to val totalSalary=baseSalary+bonusAmount
+fun main(){
+val baseSalary=5000
+val bonusAmount=1000
+val totalSalary=baseSalary + baseAmount
+println("Congratulations for your bonus! You will receive a total of $totalSalary(additional bonus).
+}
+
+//Question 7: implement basic math operation 
+//Step 1:
+fun main(){
+val firstNumber=10
+val secondNumber=5
+val result=(firstNumber+secondNumber)
+println("$firstNumber + $secondNumber = $result")
+}
+//Step 2:
+fun main(){
+val firstNumber=10
+val secondNumber=5
+val thirdNumber= 8 
+println("$firstNumber+$secondNumber="+add(firstNumber,secondNumber))
+println("$firstNumber+$thirdNumber="+add(firstNumber,thirdNumber))
+}
+
+fun add(no1:Int,no2:Int):Int{
+val result=no1+no2
+return result
+}
+//Step 3
+fun main(){
+val firstNumber=10
+val secondNumber=5
+val thirdNumber= 8 
+println("$firstNumber+$secondNumber="+add(firstNumber,secondNumber))
+println("$firstNumber+$thirdNumber="+add(firstNumber,thirdNumber))
+println("$firstNumber-$thirdNumber="+subs(firstNumber,thirdNumber))
+}
+
+fun add(no1:Int,no2:Int):Int{
+val result=no1+no2
+return result
+}
+
+fun subs(no1:Int,no2:Int):Int{
+    val result=no1-no2
+    return result 
+}
+
+//Question8:default parameter 
+//Step1:
+fun main(){
+val operatingSystem="Chrome OS"
+val emailId="sample@gmail.com"
+println(displayAlertMessage("Unknown OS","user_one@gmail.com")
+println(displayAlertMessage("Windows","user_two@gmail.com")
+println(displayAlertMessage("Mac OS","user_three@gmail.com")
+}
+fun displayAlertMessage(OS:String,mail:String):String{
+return "There's a new sign-in request on $OS for your Google Account $mail."
+}
+//Step 2
+fun main() {
+    val firstUserEmailId = "user_one@gmail.com"
+
+    // The following line of code assumes that you named your parameter as emailId. 
+    // If you named it differently, feel free to update the name.
+    println(displayAlertMessage(emailId = firstUserEmailId))
+    println()
+
+    val secondUserOperatingSystem = "Windows"
+    val secondUserEmailId = "user_two@gmail.com"
+
+    println(displayAlertMessage(secondUserOperatingSystem, secondUserEmailId))
+    println()
+
+    val thirdUserOperatingSystem = "Mac OS"
+    val thirdUserEmailId = "user_three@gmail.com"
+
+    println(displayAlertMessage(thirdUserOperatingSystem, thirdUserEmailId))
+    println()
+}
+fun displayAlertMessage(
+    operatingSystem: String = "Unknown OS",
+    emailId: String
+): String {
+    return "There is a new sign-in request on $operatingSystem, for your Google Account $emailId."
+}
+
+//Question 9:pedometer
+fun main(){
+val steps=4000
+val caloriesBurned=PedoometerStepsToCalories(steps);
+println("Walking &$stepps steps burns $caloriesBurned calories")
+}
+
+fun PedometerStepsToCalories(NumberOfSteps:Int):Double{
+val CaloriesBurnedforEachStep=0.04
+val TotalCaloriesBurned=NumberOfSteps * CaloriesBurnedforEachStep
+return TotalCaloriesBurned
+}
+//Question 10: compare two numbers
+fun main(){
+println(" ${compareTime(300,250}")
+println(" ${compareTime(300,300}")
+println(" ${compareTime(200,220}")
+}
+fun compateTime(timeSpentToday: Int, timeSpentYesterday: Int): Boolean{
+return timeSpentToday > timeSpentYesterday
+}
+//Question 11:move duplicated code into a function
+fun main(){
+printWeatherForCity("Ankara", 27, 31, 82)
+printWeatherForCity("Tokyo", 32, 36, 10)
+printWeatherForCity("Cape Town", 59, 64, 2)
+printWeatherForCity("Guatemala City", 50, 55, 7)
+}
+fun printWeatherForCity(cityName: String, low: Int, high: Int, chanceOfRain:Int){
+println("City: $cityName")
+println("Low temperature: $low, High temperature: $high")
+println("Chance of rain: $chanceofRain%")
+println()
+}
